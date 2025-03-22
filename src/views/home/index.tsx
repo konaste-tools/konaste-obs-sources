@@ -17,9 +17,11 @@ const Home = () => (
       This tool provides a number of browser sources that can provide
       information about Sound Voltex Konaste to enhance your stream. This
       project is currently considered to be in an alpha state. For any
-      enquiries, suggestions or assistance, please {" "}
-      <a href="https://github.com/konaste-tools/konaste-obs-sources/issues">open an issue</a>
-      {" "} or contact Bauxe on Discord.
+      enquiries, suggestions or assistance, please{" "}
+      <a href="https://github.com/konaste-tools/konaste-obs-sources/issues">
+        open an issue
+      </a>{" "}
+      or contact Bauxe on Discord.
     </p>
     <h2>Getting Started</h2>
     <div>
@@ -99,11 +101,12 @@ const Home = () => (
     <h2>Contributing</h2>
     <div className="description">
       This project is still in a very early (Alpha) state. If you wish to
-      contribute, please check the {" "}
-      <a href="https://github.com/konaste-tools/konaste-obs-sources">github repository</a>
-      . Primarily looking
-      for web developers to improve this website, as well as those who can help
-      pull more data out of the game (memory scraping).
+      contribute, please check the{" "}
+      <a href="https://github.com/konaste-tools/konaste-obs-sources">
+        github repository
+      </a>
+      . Primarily looking for web developers to improve this website, as well as
+      those who can help pull more data out of the game (memory scraping).
     </div>
   </div>
 );

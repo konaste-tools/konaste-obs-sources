@@ -15,6 +15,7 @@ interface Stats {
   currentNoteCount: number;
   maxCombo: number;
   score: number;
+  maxPossibleScore: number;
   ex: number;
   missedEx: number;
   combo: number;
@@ -91,9 +92,7 @@ const calculateComparisonValue = (
       return scoreType === "score"
         ? calculatePercentage(
             stats.score,
-            Math.floor(
-              10000000 * (stats.currentNoteCount / stats.chartMaxCombo),
-            ),
+            stats.score + (10000000 - stats.maxPossibleScore),
           )
         : calculatePercentage(stats.ex, stats.missedEx + stats.ex);
     case "none":
