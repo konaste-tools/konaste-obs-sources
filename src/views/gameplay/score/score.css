@@ -1,0 +1,71 @@
+div {
+  text-align: left;
+  border-radius: 4px;
+}
+
+#score {
+  font-size: 3.2em;
+  font-variant: tabular-nums;
+
+  -moz-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+#score::before {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+#ex {
+  font-size: 1.2em;
+  font-variant: tabular-nums;
+
+  -moz-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.grade-D {
+  color: #888888;
+}
+
+.grade-C {
+  color: #888888;
+}
+
+.grade-B {
+  color: #888888;
+}
+
+.grade-A {
+  color: gold;
+}
+
+.grade-A\+ {
+  color: gold;
+}
+
+.grade-AA {
+  color: gold;
+}
+
+.grade-AA\+ {
+  color: gold;
+}
+
+.grade-AAA {
+  color: gold;
+}
+
+.grade-AAA\+ {
+  color: #ffd700;
+}
+
+.grade-S {
+  color: gold;
+}

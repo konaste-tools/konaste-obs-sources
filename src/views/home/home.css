@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.center {
+  margin: auto;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  text-align: left;
+  font-size: 2.4em;
+}
+
+h3 {
+  text-align: left;
+  font-size: 1.6em;
+}
+
+div.endpoint {
+  text-align: left;
+  font-size: 1.6em;
+  text-decoration: #535bf2;
+  text-decoration-line: underline;
+}
+
+div.description {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+div.warning {
+  /*background-color: #330000;*/
+  /*border: 3px solid #700;*/
+  /*border-radius: 1rem;*/
+  /*padding: 1rem;*/
+  /*margin: 2rem 0;*/
+  /*fill-opacity: 20%;*/
+  /*font-size: 0.8em;*/
+}
