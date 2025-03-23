@@ -7,6 +7,8 @@ import LetterL from "./LetterL.tsx";
 import LetterM from "./LetterM.tsx";
 import LetterO from "./LetterO.tsx";
 import LetterP from "./LetterP.tsx";
+import LetterPv2 from "./LetterPv2.tsx";
+import LetterSv2 from "./LetterSv2.tsx";
 import LetterU from "./LetterU.tsx";
 import LetterY from "./LetterY.tsx";
 
@@ -20,6 +22,8 @@ export {
   LetterM,
   LetterO,
   LetterP,
+  LetterPv2,
+  LetterSv2,
   LetterU,
   LetterY,
 };
