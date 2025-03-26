@@ -34,9 +34,11 @@ import Grade from "../../../assets/grades";
 const buildItemRow = (title: TableTitle, row: TableRow) => {
   return (
     <>
-      <th className="font-bold text-4xl text-yellow-300">{title.title}</th>
+      <th className="font-bold text-4xl text-yellow-300 w-1/12">
+        {title.title}
+      </th>
       {row.data.map((c) => (
-        <td className="text-2xl text-gray-200">
+        <td className="text-2xl text-gray-200 w-auto">
           {c}/{title.count}
         </td>
       ))}
@@ -53,10 +55,10 @@ const ScoreTableView = ({
 }) => {
   return (
     <>
-      <table className="table-auto content-evenly absolute left-0 top-0 border-2 [&_td]:border-gray-400 [&_td]:w-1/16 [&_td]:h-16 [&_td]:p-2 [&_td]:border-2">
+      <table className="table-fixed w-full content-evenly absolute left-0 top-0 border-2 [&_td]:border-gray-400 [&_td]:h-16 [&_td]:p-2 [&_td]:border-2">
         <tbody>
           <tr>
-            <td></td>
+            <th className="w-1/12"></th>
             {clearType === "clear_mark"
               ? data.columnTitles.map((type) => (
                   <td>

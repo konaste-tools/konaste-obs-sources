@@ -1,7 +1,7 @@
 const ClearHexagon = ({ markType }: { markType: string }) => {
   return (
     <svg
-      className="clear-hexagon"
+      className={"clear-hexagon " + markType}
       viewBox="0 0 150 150"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

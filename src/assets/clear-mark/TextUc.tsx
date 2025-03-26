@@ -1,36 +1,28 @@
-import { LetterC, LetterU } from "../letters";
+import { LetterCv2, LetterUv2, Word } from "../letters";
 
 const TextUc = () => {
-  const width = 50;
-  const height = 24;
-  const size = 104;
-  const offset = size / 2 - width / 2;
-  const verticalOffset = size / 2 - height / 2;
+  const gradientId = "paint0_linear_letter_uc";
+  const fill = `url(#${gradientId})`;
+
   return (
-    <svg className="clear-mark-text" viewBox="0 0 104 104">
-      <g id="letterU" transform={`translate(${offset}, ${verticalOffset})`}>
-        <LetterU gradient="letter_linear_uc" />
-      </g>
-      <g
-        id="letterC"
-        transform={`translate(${offset + 25}, ${verticalOffset})`}
-      >
-        <LetterC gradient="letter_linear_uc" />
-      </g>
-      <defs>
-        <linearGradient
-          id={`letter_linear_uc`}
-          x1="15"
-          y1="4"
-          x2="15"
-          y2="20"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="var(--letter-colour-1)" />
-          <stop stopColor="var(--letter-colour-2)" offset="1" />
-        </linearGradient>
-      </defs>
-    </svg>
+    <>
+      <svg width="0" height="0" viewBox="0 0 0 0">
+        <defs>
+          <linearGradient
+            id={gradientId}
+            x1="45"
+            y1="12"
+            x2="45"
+            y2="60"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="var(--letter-colour-1)" />
+            <stop stopColor="var(--letter-colour-2)" offset="1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <Word scale={70} letters={[LetterUv2, LetterCv2]} fill={fill} />
+    </>
   );
 };
 

@@ -17,7 +17,7 @@ interface NowPlayingSongModel {
   jacketBig: string;
 }
 
-type ClearMarkType = "no" | "played" | "comp" | "ex" | "uc" | "puc";
+type ClearMarkType = "no" | "played" | "comp" | "ex" | "uc" | "puc" | "spuc";
 
 type GradeType =
   | "S"

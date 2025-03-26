@@ -1,9 +1,9 @@
-import { LetterCv2, LetterPv2, LetterUv2, Word } from "../letters";
+import { LetterPv2, LetterSv2, Word, LetterUv2, LetterCv2 } from "../letters";
+import { Dash } from "../special";
 
-const TextPuc = () => {
-  const gradientId = "paint0_linear_letter_puc";
+const TextSPuc = () => {
+  const gradientId = "paint0_linear_letter_spuc";
   const fill = `url(#${gradientId})`;
-
   return (
     <>
       <svg width="0" height="0" viewBox="0 0 0 0">
@@ -22,12 +22,12 @@ const TextPuc = () => {
         </defs>
       </svg>
       <Word
-        scale={70}
-        letters={[LetterPv2, LetterUv2, LetterCv2]}
+        scale={75}
+        letters={[LetterSv2, Dash, LetterPv2, LetterUv2, LetterCv2]}
         fill={fill}
       />
     </>
   );
 };
 
-export default TextPuc;
+export default TextSPuc;
