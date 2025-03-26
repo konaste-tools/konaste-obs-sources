@@ -53,7 +53,7 @@ const ScoreTableView = ({
 }) => {
   return (
     <>
-      <table className="table-auto content-evenly absolute left-0 top-0 border-2 [&_td]:border-gray-400 [&_td]:w-1/16 [&_td]:h-16 [&_td]:p-2 [&_td]:border-2">
+      <table className="table-fixed w-full content-evenly absolute left-0 top-0 border-2 [&_td]:border-gray-400 [&_td]:w-1/16 [&_td]:h-16 [&_td]:p-2 [&_td]:border-2">
         <tbody>
           <tr>
             <td></td>
