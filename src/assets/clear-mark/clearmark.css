@@ -2,58 +2,68 @@ svg {
     stroke: black;
     stroke-width: 1px;
 }
-svg.played svg {
+linearGradient#paint0_linear_letter_played {
     --letter-colour-1: #4d9761;
     --letter-colour-2: #769883;
 
 }
 
-svg.comp svg {
+linearGradient#paint0_linear_letter_comp {
     --letter-colour-1: #84fba5;
     --letter-colour-2: #c8fddc;
 
 }
 
-svg.ex svg {
+linearGradient#paint0_linear_letter_ex {
     --letter-colour-1: #cb53f7;
     --letter-colour-2: #e9bbfb;
 
 }
 
-svg.uc svg {
+linearGradient#paint0_linear_letter_uc {
     --letter-colour-1: #eb54a8;
     --letter-colour-2: #f5c0df;
 
 }
 
-svg.puc svg {
+linearGradient#paint0_linear_letter_puc {
     --letter-colour-1: #fefd69;
     --letter-colour-2: #fefebc;
 }
 
-svg.played svg.clear-hexagon {
+linearGradient#paint0_linear_letter_spuc {
+    --letter-colour-1: #ffffaf;
+    --letter-colour-2: #ffffe9;
+}
+
+svg.played.clear-hexagon {
     --mark-colour-stroke-1: #4b9560;
     --mark-colour-stroke-2: #3a754a;
 }
 
-svg.comp svg.clear-hexagon {
+svg.comp.clear-hexagon {
     --mark-colour-stroke-1: #84fb9f;
     --mark-colour-stroke-2: #63c47d;
 }
 
-svg.ex svg.clear-hexagon {
+svg.ex.clear-hexagon {
     --mark-colour-stroke-1: #c64af2;
     --mark-colour-stroke-2: #9d39c0;
 }
 
-svg.uc svg.clear-hexagon {
+svg.uc.clear-hexagon {
     --mark-colour-stroke-1: #e850a3;
     --mark-colour-stroke-2: #b73e81;
 }
 
-svg.puc svg.clear-hexagon {
+svg.puc.clear-hexagon {
     --mark-colour-stroke-1: #fbfa65;
     --mark-colour-stroke-2: #787729;
+}
+
+svg.spuc.clear-hexagon {
+    --mark-colour-stroke-1: #ffffac;
+    --mark-colour-stroke-2: #8e8d63;
 }
 
 svg.clear-hexagon {

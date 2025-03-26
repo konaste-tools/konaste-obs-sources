@@ -6,7 +6,7 @@ const meta: Meta<typeof ClearMark> = {
   component: ClearMark,
   argTypes: {
     markType: {
-      options: ["puc", "uc", "ex", "comp", "played"],
+      options: ["spuc", "puc", "uc", "ex", "comp", "played"],
     },
   },
 };

@@ -6,10 +6,13 @@ import TextEx from "./TextEx.tsx";
 import TextUc from "./TextUc.tsx";
 import TextPlayed from "./TextPlayed.tsx";
 import { ClearMarkType } from "../../clients/KonasteModels.ts";
+import TextSPuc from "./TextSPuc.tsx";
 
 const ClearMark = ({ markType }: { markType: ClearMarkType }) => {
   const TextComponent = (() => {
     switch (markType) {
+      case "spuc":
+        return TextSPuc;
       case "puc":
         return TextPuc;
       case "comp":
@@ -25,16 +28,18 @@ const ClearMark = ({ markType }: { markType: ClearMarkType }) => {
     }
   })();
   return (
-    <svg
+    <div className={"relative w-full h-full flex"}>
+      {/* <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
       className={markType + " object-fill"}
       width="100%"
       height="100%"
-    >
+    > */}
       <ClearHexagon markType={markType} />
       <TextComponent />
-    </svg>
+      {/* </svg> */}
+    </div>
   );
 };
 export default ClearMark;

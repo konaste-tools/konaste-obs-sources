@@ -1,48 +1,32 @@
-import { LetterC, LetterM, LetterO, LetterP } from "../letters";
+import { LetterCv2, LetterMv2, LetterOv2, LetterPv2, Word } from "../letters";
 
 const TextEx = () => {
-  const width = 98;
-  const height = 24;
-  const size = 150;
-  const offset = size / 2 - width / 2;
-  const verticalOffset = size / 2 - height / 2;
+  const gradientId = "paint0_linear_letter_ex";
+  const fill = `url(#${gradientId})`;
+
   return (
-    <svg className="clear-mark-text" viewBox="0 0 150 150">
-      <g id="letterC" transform={`translate(${offset}, ${verticalOffset})`}>
-        <LetterC gradient="letter_linear_ex" />
-      </g>
-      <g
-        id="letterO"
-        transform={`translate(${offset + 23}, ${verticalOffset})`}
-      >
-        <LetterO gradient="letter_linear_ex" />
-      </g>
-      <g
-        id="letterM"
-        transform={`translate(${offset + 46}, ${verticalOffset})`}
-      >
-        <LetterM gradient="letter_linear_ex" />
-      </g>
-      <g
-        id="letterP"
-        transform={`translate(${offset + 75}, ${verticalOffset})`}
-      >
-        <LetterP gradient="letter_linear_ex" />
-      </g>
-      <defs>
-        <linearGradient
-          id={`letter_linear_ex`}
-          x1="15"
-          y1="4"
-          x2="15"
-          y2="20"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="var(--letter-colour-1)" />
-          <stop stopColor="var(--letter-colour-2)" offset="1" />
-        </linearGradient>
-      </defs>
-    </svg>
+    <>
+      <svg width="0" height="0" viewBox="0 0 0 0">
+        <defs>
+          <linearGradient
+            id={gradientId}
+            x1="45"
+            y1="12"
+            x2="45"
+            y2="60"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="var(--letter-colour-1)" />
+            <stop stopColor="var(--letter-colour-2)" offset="1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <Word
+        scale={70}
+        letters={[LetterCv2, LetterOv2, LetterMv2, LetterPv2]}
+        fill={fill}
+      />
+    </>
   );
 };
 
