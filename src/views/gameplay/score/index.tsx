@@ -143,9 +143,8 @@ const Score = () => {
   }, [konasteApi]);
 
   useEffect(() => {
-    const targetScore =
-      scoreType === "score" ? stats?.score || 0 : stats?.ex || 0;
-    if (score !== targetScore) {
+    const targetScore = scoreType === "score" ? stats?.score : stats?.ex;
+    if (targetScore && score !== targetScore) {
       setScore(targetScore);
     }
     if (scoreInfo === undefined || stats === undefined) return;
@@ -159,14 +158,6 @@ const Score = () => {
       setComparison(targetComparison);
     }
   }, [scoreInfo, stats]);
-
-  if (
-    konasteApi === undefined ||
-    stats === undefined ||
-    scoreInfo === undefined
-  ) {
-    return <></>;
-  }
 
   return (
     <ScoreView
