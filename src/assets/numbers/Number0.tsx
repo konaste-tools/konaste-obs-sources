@@ -1,11 +1,13 @@
 const Number0 = ({ fill }: { fill: string }) => {
   return (
     <svg
+      className="w-full h-full"
       width="72"
       height="72"
       viewBox="0 0 72 72"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      data-testid="number-0"
     >
       <path
         d="M1 29.4142L16 14.4142V55V56H17H54V59.5858L42.5858 71H1V29.4142Z"

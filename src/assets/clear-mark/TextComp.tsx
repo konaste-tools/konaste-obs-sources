@@ -1,4 +1,4 @@
-import { LetterCv2, LetterMv2, LetterOv2, LetterPv2, Word } from "../letters";
+import { Word } from "../letters";
 
 const TextComp = () => {
   const gradientId = "paint0_linear_letter_comp";
@@ -21,11 +21,7 @@ const TextComp = () => {
           </linearGradient>
         </defs>
       </svg>
-      <Word
-        scale={70}
-        letters={[LetterCv2, LetterOv2, LetterMv2, LetterPv2]}
-        fill={fill}
-      />
+      <Word letters="COMP" fill={fill} />
     </>
   );
 };

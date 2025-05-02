@@ -1,4 +1,4 @@
-import { LetterCv2, LetterPv2, LetterUv2, Word } from "../letters";
+import { Word } from "../letters";
 
 const TextPuc = () => {
   const gradientId = "paint0_linear_letter_puc";
@@ -21,11 +21,7 @@ const TextPuc = () => {
           </linearGradient>
         </defs>
       </svg>
-      <Word
-        scale={70}
-        letters={[LetterPv2, LetterUv2, LetterCv2]}
-        fill={fill}
-      />
+      <Word letters="PUC" fill={fill} />
     </>
   );
 };

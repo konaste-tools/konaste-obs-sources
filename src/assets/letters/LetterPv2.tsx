@@ -1,6 +1,11 @@
 const LetterPv2 = ({ fill }: { fill: string }) => {
   return (
-    <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="w-full h-full"
+      viewBox="0 0 72 72"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M15 14H14V15V71H1V1H57V14H15Z"
         stroke="black"

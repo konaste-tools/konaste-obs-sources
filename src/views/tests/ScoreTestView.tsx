@@ -20,11 +20,16 @@ const ScoreTestView = () => {
   }, [score]);
 
   return (
-    <ScoreView
-      score={score}
-      comparisonType={ComparisonType.PERCENTAGE}
-      comparison={rate}
-    />
+    // <div>
+    //   <Word letters={[Number9, Number5, Number1]} fill={""} />
+    // </div>
+    <div className="h-12 w-full">
+      <ScoreView
+        score={score}
+        comparisonType={ComparisonType.PERCENTAGE}
+        comparison={rate}
+      />
+    </div>
   );
 };
 

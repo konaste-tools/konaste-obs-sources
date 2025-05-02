@@ -23,13 +23,13 @@ const GradeAAAPlus = () => {
           </linearGradient>
         </defs>
       </svg>
-      <div className="w-1/3 h-full [&_svg]:scale-y-[3] [&_svg]:translate-y-[100%]">
+      <div className="w-1/3 h-full [&_svg]:scale-y-[3]">
         <LetterAv2 fill={fill} />
       </div>
-      <div className="w-1/3 h-full [&_svg]:scale-y-[3] [&_svg]:translate-y-[100%]">
+      <div className="w-1/3 h-full [&_svg]:scale-y-[3]">
         <LetterAv2 fill={fill} />
       </div>
-      <div className="w-1/3 h-full [&_svg]:scale-y-[3] [&_svg]:translate-y-[100%]">
+      <div className="w-1/3 h-full [&_svg]:scale-y-[3]">
         <LetterAv2 fill={fill} />
       </div>
       <div className="absolute bottom-0 right-0 w-2/4 h-2/4">

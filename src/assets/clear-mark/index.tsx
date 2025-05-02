@@ -28,17 +28,17 @@ const ClearMark = ({ markType }: { markType: ClearMarkType }) => {
     }
   })();
   return (
-    <div className={"relative w-full h-full flex"}>
-      {/* <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 100 100"
-      className={markType + " object-fill"}
-      width="100%"
-      height="100%"
-    > */}
-      <ClearHexagon markType={markType} />
-      <TextComponent />
-      {/* </svg> */}
+    <div className="aspect-square">
+      <div className={"relative w-full h-full"}>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <ClearHexagon markType={markType} />
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-3/4">
+            <TextComponent />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

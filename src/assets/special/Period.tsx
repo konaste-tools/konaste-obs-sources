@@ -1,6 +1,7 @@
 const Period = ({ fill }: { fill: string }) => {
   return (
     <svg
+      className="w-full h-full"
       width="72"
       height="72"
       viewBox="0 0 72 72"

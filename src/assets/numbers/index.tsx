@@ -8,38 +8,7 @@ import Number6 from "./Number6.tsx";
 import Number7 from "./Number7.tsx";
 import Number8 from "./Number8.tsx";
 import Number9 from "./Number9.tsx";
-import { Dash, Percent, Period } from "../special";
-
-const asSvg = (e: string, fill: string) => {
-  switch (e) {
-    case "0":
-      return <Number0 fill={fill} />;
-    case "1":
-      return <Number1 fill={fill} />;
-    case "2":
-      return <Number2 fill={fill} />;
-    case "3":
-      return <Number3 fill={fill} />;
-    case "4":
-      return <Number4 fill={fill} />;
-    case "5":
-      return <Number5 fill={fill} />;
-    case "6":
-      return <Number6 fill={fill} />;
-    case "7":
-      return <Number7 fill={fill} />;
-    case "8":
-      return <Number8 fill={fill} />;
-    case "9":
-      return <Number9 fill={fill} />;
-    case "-":
-      return <Dash fill={fill} />;
-    case ".":
-      return <Period fill={fill} />;
-    default:
-      return <Number0 fill={fill} />;
-  }
-};
+import { Word } from "../letters";
 
 const RenderedNumber = ({
   value,
@@ -63,9 +32,12 @@ const RenderedNumber = ({
   } else {
     display = value;
   }
+  if (percentage) {
+    display = [...display, "%"];
+  }
 
   return (
-    <div className="flex">
+    <div className="flex w-full items-center justify-center overflow-hidden">
       <svg width="0" height="0" viewBox="0 0 0 0">
         <defs>
           <linearGradient
@@ -83,8 +55,11 @@ const RenderedNumber = ({
           </linearGradient>
         </defs>
       </svg>
-      {display.map((n) => asSvg(n, fill))}
-      {percentage && <Percent fill={fill} />}
+      <Word
+        letters={display.join("")}
+        fill={fill}
+        className="w-full max-w-full gap-0.5"
+      />
     </div>
   );
 };

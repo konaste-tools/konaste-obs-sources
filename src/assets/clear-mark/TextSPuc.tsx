@@ -1,5 +1,4 @@
-import { LetterPv2, LetterSv2, Word, LetterUv2, LetterCv2 } from "../letters";
-import { Dash } from "../special";
+import { Word } from "../letters";
 
 const TextSPuc = () => {
   const gradientId = "paint0_linear_letter_spuc";
@@ -22,9 +21,10 @@ const TextSPuc = () => {
         </defs>
       </svg>
       <Word
-        scale={75}
-        letters={[LetterSv2, Dash, LetterPv2, LetterUv2, LetterCv2]}
+        letters={"S-PUC"}
+        // letters={[LetterSv2, Dash, LetterPv2, LetterUv2, LetterCv2]}
         fill={fill}
+        className="w-[120%] h-auto transform translate-x-[-10%]"
       />
     </>
   );

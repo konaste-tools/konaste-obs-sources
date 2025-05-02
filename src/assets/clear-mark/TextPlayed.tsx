@@ -1,12 +1,4 @@
-import {
-  LetterAv2,
-  LetterDv2,
-  LetterEv2,
-  LetterLv2,
-  LetterPv2,
-  LetterYv2,
-  Word,
-} from "../letters";
+import { Word } from "../letters";
 
 const TextPlayed = () => {
   const gradientId = "paint0_linear_letter_played";
@@ -29,18 +21,7 @@ const TextPlayed = () => {
           </linearGradient>
         </defs>
       </svg>
-      <Word
-        scale={70}
-        letters={[
-          LetterPv2,
-          LetterLv2,
-          LetterAv2,
-          LetterYv2,
-          LetterEv2,
-          LetterDv2,
-        ]}
-        fill={fill}
-      />
+      <Word letters="PLAYED" fill={fill} />
     </>
   );
 };

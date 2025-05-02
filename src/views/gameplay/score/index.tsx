@@ -144,9 +144,11 @@ const Score = () => {
 
   useEffect(() => {
     const targetScore = scoreType === "score" ? stats?.score : stats?.ex;
-    if (targetScore && score !== targetScore) {
+
+    if (targetScore !== undefined && score !== targetScore) {
       setScore(targetScore);
     }
+
     if (scoreInfo === undefined || stats === undefined) return;
     const targetComparison = calculateComparisonValue(
       scoreInfo,

@@ -3,6 +3,7 @@ import reactPlugin from 'eslint-plugin-react';
 import tsParser from "@typescript-eslint/parser";
 import eslintConfigPrettier from "eslint-config-prettier";
 import globals from "globals";
+import jest from "eslint-plugin-jest";
 
 import js from '@eslint/js';
 
@@ -40,13 +41,22 @@ export default [
     },
     {
         files: ["**/*.test.ts", "**/*.test.tsx"],
+        plugins: {
+            jest,
+        },
         languageOptions: {
             globals: {
+                ...globals.jest,
                 it: "readonly",
                 expect: "readonly",
                 describe: "readonly",
                 test: "readonly",
             }
-        }
+        },
+        rules: {
+            "jest/no-disabled-tests": "warn",
+            "jest/no-identical-title": "error",
+            "jest/valid-expect": "error",
+        },
     }
 ];

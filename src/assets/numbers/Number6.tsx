@@ -2,11 +2,13 @@
 const Number6 = ({ fill }: { fill: string }) => {
   return (
     <svg
+      className="w-full h-full"
       width="72"
       height="72"
       viewBox="0 0 72 72"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      data-testid="number-6"
     >
       <defs>
         <mask id="mask_number_6">

@@ -52,9 +52,11 @@ const ScoreView = ({ score, comparison, comparisonType }: ScoreViewProps) => {
   }, [comparison]);
 
   return (
-    <div className="w-2/3">
-      <RenderedNumber value={count} length={8} />
-      <div className="float-right w-1/2">
+    <div className="w-full">
+      <div className="relative p-[1%]">
+        <RenderedNumber value={count} length={8} />
+      </div>
+      <div className="w-1/2 ml-auto relative">
         {GetComparisonView(comparisonCount, comparisonType)}
       </div>
     </div>

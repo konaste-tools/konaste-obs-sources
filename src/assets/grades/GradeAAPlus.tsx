@@ -24,10 +24,10 @@ const GradeAAPlus = () => {
         </defs>
       </svg>
 
-      <div className="w-1/2 h-full [&_svg]:scale-y-[2] [&_svg]:translate-y-1/2">
+      <div className="w-1/2 h-full [&_svg]:scale-y-[2]">
         <LetterAv2 fill={fill} />
       </div>
-      <div className="w-1/2 h-full [&_svg]:scale-y-[2] [&_svg]:translate-y-1/2">
+      <div className="w-1/2 h-full [&_svg]:scale-y-[2]">
         <LetterAv2 fill={fill} />
       </div>
       <div className="absolute bottom-0 right-0 w-2/4 h-2/4">

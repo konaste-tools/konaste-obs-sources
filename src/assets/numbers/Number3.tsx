@@ -1,11 +1,13 @@
 const Number3 = ({ fill }: { fill: string }) => {
   return (
     <svg
+      className="w-full h-full"
       width="72"
       height="72"
       viewBox="0 0 72 72"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      data-testid="number-3"
     >
       <path d="M1 1H55V16H1V1Z" fill={fill} stroke="black" strokeWidth="2" />
       <path

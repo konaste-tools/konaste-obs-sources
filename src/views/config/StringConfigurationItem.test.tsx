@@ -2,6 +2,8 @@ import StringConfigurationItem from "./StringConfigurationItem.tsx";
 import { render, screen } from "@testing-library/react";
 import { userEvent } from "@testing-library/user-event";
 
+import { test, expect } from "vitest";
+
 test("configuration item is rendered without a name", () => {
   render(
     <StringConfigurationItem
